@@ -1,0 +1,16 @@
+<div>
+                            Burger: <?php $t_burger = ($_POST["v_burger"]) * 150;
+                                            echo $_POST["v_burger"] . ' x 150 = ' . $t_burger; ?>  <br>
+                                            Fries: <?php $t_fries = $_POST["v_fries"] * 100;
+                                                            echo $_POST["v_fries"] . ' x 150 = ' . $t_fries; ?><br>
+                                            Iced Tea: <?php $t_icedtea = $_POST["v_fries"] * 100;
+                                                            echo $_POST["v_icedtea"] . ' x 60 = ' . $t_icedtea; ?><br>
+                                            Total: <?php $t_order = $t_burger + $t_fries + $t_icedtea ;
+                                                            if ($t_order >= 500){
+                                                                echo $t_order . ' (No Delivery Fee)';
+                                                            }
+                                                            else{
+                                                                echo $t_order . ' = ' . $t_order + 70 . '(Additional ₱70 Delivery Fee)';
+                                                            }
+                                                            ?>
+                                        </div>
